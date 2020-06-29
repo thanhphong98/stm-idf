@@ -215,5 +215,5 @@ flash_stlink:
 # monitor 
 #######################################
 monitor:
-	minicom -c on
+	python3 $(STM_IDF_PATH)/tools/idf_py.py build/$(PROJECT_NAME).elf
   
