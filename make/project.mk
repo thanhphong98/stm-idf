@@ -215,5 +215,12 @@ flash_stlink:
 # monitor 
 #######################################
 monitor:
-	python3 $(STM_IDF_PATH)/tools/idf_py.py build/$(PROJECT_NAME).elf
+	python3 $(STM_IDF_PATH)/tools/terminal/idf_teminal.py build/$(PROJECT_NAME).elf
+
+
+#######################################
+# menuconfig
+#######################################
+menuconfig:
+	python3 $(STM_IDF_PATH)/tools/config/idf_menuconfig.py main/Kconfig.projbuild
   
